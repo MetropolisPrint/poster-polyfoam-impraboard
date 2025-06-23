@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pesan Poster Polyfoam & Impraboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 16px;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .description {
+      font-size: 14px;
+      color: #444;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      background-color: #fff;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      width: 100%;
+      margin-top: 24px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    button:hover {
+      background-color: #1ebe5d;
+    }
+    .note {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #d35400;
+      background: #fff6e5;
+      padding: 12px 14px;
+      border-radius: 8px;
+      line-height: 1.5;
+    }
+    .note b {
+      display: block;
+      font-size: 16px;
+      color: #c0392b;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <form onsubmit="sendToWA(); return false;">
+    <h2>Pesan Poster Polyfoam & Impraboard</h2>
+    <div class="description">
+      Polyfoam dan Impraboard adalah bahan yang digunakan untuk menampilkan desain dan informasi yang dipasang pada Poster Tripod atau dapat digunakan juga untuk keperluan yang lain. Pada proses cetak polyfoam dan impraboard pada kami menggunakan mesin High Resolution yang memiliki ketajaman cetakan yang sangat baik dan warna yang memukau sehingga sangat cocok digunakan untuk mencetak media yang akan dipasang di dalam ruangan atau indoor.
+    </div>
+
+    <label for="nama">Nama Anda</label>
+    <input type="text" id="nama" required>
+
+    <label for="wa">Nomor WA Anda</label>
+    <input type="tel" id="wa" pattern="[0-9]+" required>
+
+    <label for="bahan">Bahan</label>
+    <select id="bahan" required>
+      <option value="" disabled selected>Pilih bahan</option>
+      <option value="Polyfoam">Polyfoam</option>
+      <option value="Impraboard">Impraboard</option>
+    </select>
+
+    <label for="sticker">Pilihan Sticker</label>
+    <select id="sticker" required>
+      <option value="" disabled selected>Pilih sticker</option>
+      <option value="Sticker Vinyl Susu Glossy">Sticker Vinyl Susu Glossy</option>
+      <option value="Sticker Vinyl Susu Matte">Sticker Vinyl Susu Matte</option>
+      <option value="Sticker Albatros">Sticker Albatros</option>
+    </select>
+
+    <label for="bahanKertas">Bahan Jenis Kertas</label>
+    <select id="bahanKertas" required>
+      <option value="" disabled selected>Pilih jenis kertas</option>
+      <option value="HVS 70 gr (Print Warna)">HVS 70 gr (Print Warna)</option>
+      <option value="HVS 70 gr (Print Hitam-Putih)">HVS 70 gr (Print Hitam-Putih)</option>
+      <option value="Artpaper 120 gr">Artpaper 120 gr</option>
+      <option value="Artpaper 150 gr">Artpaper 150 gr</option>
+    </select>
+
+    <label for="ukuran">Ukuran</label>
+    <select id="ukuran" required>
+      <option value="" disabled selected>Pilih ukuran</option>
+      <option value="50 x 70 cm">50 x 70 cm</option>
+      <option value="60 x 85 cm">60 x 85 cm</option>
+      <option value="60 x 100 cm">60 x 100 cm</option>
+      <option value="80 x 120 cm">80 x 120 cm</option>
+      <option value="Custom Ukuran">Custom Ukuran</option>
+    </select>
+
+    <label for="metode">Metode Cetak Dengan Mesin Tinta</label>
+    <select id="metode" required>
+      <option value="" disabled selected>Pilih metode cetak</option>
+      <option value="UV Print (Super High Resolution)">UV Print (Super High Resolution)</option>
+      <option value="Eco-Solvent (High Resolution)">Eco-Solvent (High Resolution)</option>
+    </select>
+
+    <label for="jumlah">Jumlah Poster</label>
+    <input type="number" id="jumlah" min="1" required>
+
+    <label for="tanggal">Anda membutuhkan print ini kapan?</label>
+    <input type="date" id="tanggal" required>
+
+    <label for="jam">Pada jam berapa?</label>
+    <input type="time" id="jam" required>
+
+    <label for="catatan">Catatan Khusus untuk Admin Kami</label>
+    <textarea id="catatan" rows="3" placeholder="Contoh: Hati2 jangan sampai patah. Mohon packaging rapi. dll."></textarea>
+
+<div class="note">
+      <b>Catatan:</b>
+      Estimasi Dateline Yang Anda Atur Bisa Berubah Sesuai Kondisi Antrian.<br>
+      Anda Bisa Atur Negosiasi Waktu Dateline Dengan Admin Kami.<br>
+      <strong>"Pastikan File Anda Ready / Siap Print"</strong>
+    </div>
+
+    <button type="submit">Cek Harga ke Admin Metropolis Print</button>
+
+      </form>
+
+  <script>
+    function sendToWA() {
+      const nama = document.getElementById("nama").value;
+      const wa = document.getElementById("wa").value;
+      const bahan = document.getElementById("bahan").value;
+      const sticker = document.getElementById("sticker").value;
+      const bahanKertas = document.getElementById("bahanKertas").value;
+      const ukuran = document.getElementById("ukuran").value;
+      const metode = document.getElementById("metode").value;
+      const jumlah = document.getElementById("jumlah").value;
+      const tanggal = document.getElementById("tanggal").value;
+      const jam = document.getElementById("jam").value;
+      const catatan = document.getElementById("catatan").value || "-";
+
+      const pesan = `Halo Admin Metropolis Print!%0A%0ASaya ingin pesan Poster:%0A` +
+        `👤 Nama: ${nama}%0A📱 WA: ${wa}%0A📦 Bahan: ${bahan}%0A🖼️ Sticker: ${sticker}%0A🧾 Kertas: ${bahanKertas}%0A` +
+        `📐 Ukuran: ${ukuran}%0A🖨️ Metode Cetak: ${metode}%0A🔢 Jumlah: ${jumlah} pcs%0A📅 Tanggal: ${tanggal}%0A⏰ Jam: ${jam}%0A📝 Catatan: ${catatan}`;
+
+      const adminNumber = "6281216370657";
+      const url = `https://wa.me/${adminNumber}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
